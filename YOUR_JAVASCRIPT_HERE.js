@@ -52,5 +52,13 @@ bag.onclick = () =>{
     equipWeapon(hero)
 }
 function displayStats(hero){
-    
+    let name=hero.name
+    let health=hero.health
+    let weaponType=hero.weapon.type
+    let weaponDamage=hero.weapon.damage
+    let statsMessage="Your stats are name: "+name+"health: "+health+" Weapon: a)Type: "+weaponType+" b)Damage: "+weaponDamage
+    let stats=document.getElementById("stats")
+    stats.innerHTML =statsMessage
+
 }
+displayStats(hero)
